@@ -4,15 +4,15 @@
 resolution = true
 skip-lint = false
 
-[programs.localnet]
-anchor_lessons = "3v9JNRKT66KKHecPhy2GfBYGnYRNph9bCPqaHyPch3dB"
+[programs.devnet]
+anchor_lessons = "7QpTNRsu5Cm6ZDSWofgw25D2dfPZHvK7SsJCDbq84pjw"
 
 [registry]
 url = "https://api.apr.dev"
 
 [provider]
-cluster = "localnet"
-wallet = "~/.config/solana/id.json"
+cluster = "devnet"
+wallet = "id.json"
 
 [scripts]
 test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
